@@ -54,14 +54,14 @@ type Props = {}
 
 export default function Footer({ }: Props) {
     return (
-        <div className='flex flex-col sm:justify-start items-center justify-center w-full '>
-            <Image src={bgBoostDesktop} alt={''} className='bg-DarkViolet relative sm:flex hidden' />
-            <Image src={bgBoostMobile} alt={''} className='bg-DarkViolet relative sm:hidden flex' />
-            <div className="flex flex-col absolute left-0 text-center sm:top-32 top-44 font-bold w-full items-center gap-4 text-white">
+        <div className='flex flex-col sm:justify-start items-center justify-center w-full relative '>
+            <Image src={bgBoostDesktop} alt={''} className='bg-DarkViolet  sm:flex hidden' />
+            <Image src={bgBoostMobile} alt={''} className='bg-DarkViolet  sm:hidden flex' />
+            <div className="flex flex-col absolute left-0 text-center sm:top-10 top-24 font-bold w-full items-center gap-4 text-white">
                 <h3 className="text-3xl">Boost your links today</h3>
                 <button className='rounded-3xl bg-Cyan p-2 w-40'>Get Started</button>
             </div>
-            <div className="flex p-8 bg-VeryDarkViolet sm:justify-between sm:px-16 items-center flex-col sm:flex-row w-full 
+            <div className="flex p-8 bg-VeryDarkViolet sm:justify-between sm:px-20 items-center flex-col sm:flex-row w-full 
             sm:items-start gap-8">
                 <Link href={'/'}>
                     <Image src={logo} alt={'logo'} className='p-2 ' />

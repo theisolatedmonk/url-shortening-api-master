@@ -16,18 +16,18 @@ const navlinks = [
 
 export default function Navbar({ }: Props) {
     return (
-        <div className='flex justify-between items-center p-4 px-8 relative'>
+        <div className='flex justify-between items-center p-4 sm:px-20 relative'>
             <div className="flex items-center gap-10">
                 <Link href={'/'}>
                     <Image src={logo} alt={'logo'} className='p-2 ' />
                 </Link>
-                <div className="sm:flex gap-4 hidden">
+                <div className="sm:flex gap-4 hidden text-GrayishViolet">
                     {navlinks.map((item) => (<Link href={item.hrf}>{item.title}</Link>))}
 
                 </div>
             </div>
             <div className="sm:flex gap-4 hidden ">
-                <Link href={''} className='p-2'> Login</Link>
+                <Link href={''} className='p-2 text-GrayishViolet'> Login</Link>
                 <Link href={''} className='p-2 text-center bg-Cyan rounded-3xl px-4'>Sign Up</Link>
             </div>
             <button className='sm:hidden '><AiOutlineMenu className=' w-8 h-8' /></button>
