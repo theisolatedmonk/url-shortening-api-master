@@ -15,6 +15,7 @@ import bgShortenMobile from '@/public/images/bg-shorten-mobile.svg';
 // import illustrationWorking from '@/public/images/illustration-working.svg';
 import logo from '@/public/images/logo.svg';
 import HeroSection from './components/HeroSection';
+import AdvanceStatistics from './components/AdvanceStatistics';
 
 
 
@@ -23,9 +24,9 @@ import HeroSection from './components/HeroSection';
 export default function Home() {
   return (
 
-    <div className="flex flex-col">
+    <div className="flex flex-col font-Poppins">
       <HeroSection />
-
+      <AdvanceStatistics />
     </div>
   )
 }
