@@ -71,7 +71,7 @@ export default function AdvanceStatistics() {
                         <hr className='w-full sm:hidden' />
                         <div className="flex items-center gap-4 sm:flex-row flex-col w-full sm:w-80 ">
                             <h2 className='text-Cyan w-full sm:text-end text-start'>Out link</h2>
-                            <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 p-2 px-6 sm:w-28 text-white w-full'>Copied!</button>
+                            <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 sm:py-2 p-4 px-6 sm:w-28 text-white w-full'>Copied!</button>
                         </div>
                     </div>
                     <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full sm:gap-10 gap-4">
@@ -79,7 +79,7 @@ export default function AdvanceStatistics() {
                         <hr className='w-full sm:hidden' />
                         <div className="flex items-center gap-4 sm:flex-row flex-col w-full sm:w-80 ">
                             <h2 className='text-Cyan w-full sm:text-end text-start'>Out link</h2>
-                            <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 p-2 px-6 sm:w-28 text-white w-full'>Copied!</button>
+                            <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 sm:py-2 p-4 px-6 sm:w-28 text-white w-full'>Copied!</button>
                         </div>
                     </div>
 
