@@ -46,8 +46,8 @@ export default function AdvanceStatistics() {
 
 
 
-            <div className="flex flex-col relative justify-center items-center w-full bg-GrayishViolet">
-                <section className="flex flex-col  px-8 -mt-16 mb-2  border-2 relative h-[220px] sm:h-[150px] w-full items-center justify-center ">
+            <div className="flex flex-col relative justify-center items-center w-full  sm:gap-4 xl:gap-10 bg-Gray mt-28 bg-opacity-60">
+                <section className="flex flex-col  px-8 -mt-28 sm:-mt-16 xl:-mt-14 mb-2  relative h-[220px] sm:h-[150px]  w-full items-center justify-center ">
                     <div className="absolute sm:px-20 px-4 w-full">
                         <Image src={bgShortenDesktop} alt={''} className='bg-DarkViolet  w-full rounded-lg h-full sm:flex hidden' />
                         <Image src={bgShortenMobile} alt={''} className='bg-DarkViolet  w-full rounded-lg h-full   sm:hidden flex' />
@@ -55,7 +55,7 @@ export default function AdvanceStatistics() {
 
                     <div className="flex  z-10 w-full  items-start gap-1 p-4 sm:px-24 justify-center flex-col sm:flex-row">
                         <div className="flex  gap-1 items-start justify-start w-full   flex-col">
-                            <input type="text" className=' border-2 h-14 rounded-md outline-none px-2 sm:w-[96%] w-full hover:ring-2 hover:ring-Red' />
+                            <input type="text" placeholder='Shorten a link here... ' className=' h-14 rounded-md outline-none px-2 sm:w-[96%] w-full hover:ring-2 hover:ring-Red ' />
 
 
                             <h1 className='text-start w-full text-Red text-sm'>Please add a link</h1>
@@ -64,28 +64,21 @@ export default function AdvanceStatistics() {
                     </div>
                 </section>
                 <section className='flex gap-3 flex-col w-full sm:px-20 px-4'>
-                    <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full gap-10">
-                        <h2 className='text-VeryDarkViolet  w-full sm:w-[520px] pr-4 overflow-hidden '>Inputs</h2>
-                        <hr className='w-full sm:hidden' />
-                        <div className="flex items-center gap-2 sm:flex-row flex-col w-full sm:w-80 ">
-                            <h2 className='text-Cyan w-full text-end'>Out link</h2>
-                            <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 p-2 px-6 sm:w-28 text-white w-full'>Copied!</button>
-                        </div>
-                    </div>
 
-                    <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full gap-10">
+
+                    <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full sm:gap-10 gap-4">
                         <h2 className='text-VeryDarkViolet  w-full sm:w-[520px] pr-4 overflow-hidden '>Inputs</h2>
                         <hr className='w-full sm:hidden' />
-                        <div className="flex items-center gap-2 sm:flex-row flex-col w-full sm:w-80 ">
-                            <h2 className='text-Cyan w-full text-end'>Out link</h2>
+                        <div className="flex items-center gap-4 sm:flex-row flex-col w-full sm:w-80 ">
+                            <h2 className='text-Cyan w-full sm:text-end text-start'>Out link</h2>
                             <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 p-2 px-6 sm:w-28 text-white w-full'>Copied!</button>
                         </div>
                     </div>
-                    <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full gap-10">
+                    <div className=" bg-white   rounded-md flex justify-between sm:items-center items-start p-4 sm:flex-row flex-col w-full sm:gap-10 gap-4">
                         <h2 className='text-VeryDarkViolet  w-full sm:w-[520px] pr-4 overflow-hidden '>Inputs</h2>
                         <hr className='w-full sm:hidden' />
-                        <div className="flex items-center gap-2 sm:flex-row flex-col w-full sm:w-80 ">
-                            <h2 className='text-Cyan w-full text-end'>Out link</h2>
+                        <div className="flex items-center gap-4 sm:flex-row flex-col w-full sm:w-80 ">
+                            <h2 className='text-Cyan w-full sm:text-end text-start'>Out link</h2>
                             <button className='rounded-md bg-Cyan hover:bg-opacity-80 bg-opacity-100 p-2 px-6 sm:w-28 text-white w-full'>Copied!</button>
                         </div>
                     </div>
