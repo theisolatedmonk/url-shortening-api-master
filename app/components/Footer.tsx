@@ -2,22 +2,23 @@ import React from 'react'
 import Image from 'next/image'
 
 import logo from '@/public/images/logo.svg';
+import logoWhite from '@/public/images/logoWhite.svg';
 import bgBoostDesktop from '@/public/images/bg-boost-desktop.svg';
 import bgBoostMobile from '@/public/images/bg-boost-mobile.svg';
 
-import iconFacebook from '@/public/images/icon-facebook.svg';
+import { BiLogoFacebookSquare, BiLogoTwitter, BiLogoPinterest, BiLogoInstagram } from 'react-icons/bi'
 
-import iconInstagram from '@/public/images/icon-instagram.svg';
-import iconPinterest from '@/public/images/icon-pinterest.svg';
-import iconTwitter from '@/public/images/icon-twitter.svg';
+
+
+
 import Link from 'next/link';
 import { features } from 'process';
 
 const socialMediaIcon = [
-    { alt: 'Facebook', src: iconFacebook, href: '#' },
-    { alt: 'Twitter', src: iconTwitter, href: '#' },
-    { alt: 'Pinterest', src: iconPinterest, href: '#' },
-    { alt: 'Instagram', src: iconInstagram, href: '#' }
+    { mediaIcon: <BiLogoFacebookSquare className='hover:text-Cyan text-white h-6 w-6' />, href: '#' },
+    { mediaIcon: <BiLogoTwitter className='hover:text-Cyan text-white h-6 w-6' />, href: '#' },
+    { mediaIcon: <BiLogoPinterest className='hover:text-Cyan text-white h-6 w-6' />, href: '#' },
+    { mediaIcon: <BiLogoInstagram className='hover:text-Cyan text-white h-6 w-6' />, href: '#' }
 ]
 
 const siteMap = [
@@ -53,17 +54,18 @@ type Props = {}
 
 export default function Footer({ }: Props) {
     return (
-        <div className='flex flex-col sm:justify-start items-center justify-center w-full relative '>
-            <Image src={bgBoostDesktop} alt={''} className='bg-DarkViolet  sm:flex hidden' />
-            <Image src={bgBoostMobile} alt={''} className='bg-DarkViolet  sm:hidden flex' />
+        <div className='flex flex-col sm:justify-start items-center justify-center w-full relative font-Poppins '>
+            <Image src={bgBoostDesktop} alt={''} className='bg-DarkViolet  sm:flex hidden w-full' />
+            <Image src={bgBoostMobile} alt={''} className='bg-DarkViolet  sm:hidden flex w-full' />
             <div className="flex flex-col absolute left-0 text-center sm:top-10 top-24 font-bold w-full items-center gap-4 text-white">
                 <h3 className="text-3xl">Boost your links today</h3>
-                <button className='rounded-3xl bg-Cyan p-2 w-40'>Get Started</button>
+                <button className='rounded-3xl  bg-Cyan bg-opacity-80 hover:bg-opacity-100 p-2 w-40'>Get Started</button>
             </div>
             <div className="flex p-8 bg-VeryDarkViolet sm:justify-between sm:px-20 items-center flex-col sm:flex-row w-full 
             sm:items-start gap-8">
                 <Link href={'/'}>
-                    <Image src={logo} alt={'logo'} className='p-2 ' />
+                    <Image src={logoWhite} alt={'logo'} className='p-2 text-white ' />
+
                 </Link>
 
                 <div className="flex sm:gap-40 items-start flex-col  sm:flex-row gap-10">
@@ -86,7 +88,7 @@ export default function Footer({ }: Props) {
                     <div className="flex gap-2 items-center">
                         {socialMediaIcon.map((item) => (
                             <Link href={item.href}>
-                                <Image src={item.src} alt={item.alt} />
+                                <div className=" ">{item.mediaIcon}</div>
                             </Link>
                         ))}
 

@@ -16,7 +16,7 @@ const navlinks = [
 
 export default function Navbar({ }: Props) {
     return (
-        <div className='flex justify-between items-center p-4 sm:px-20 relative'>
+        <div className='flex justify-between items-center p-4 sm:px-20 relative font-Poppins'>
             <div className="flex items-center gap-10">
                 <Link href={'/'}>
                     <Image src={logo} alt={'logo'} className='p-2 ' />
@@ -28,7 +28,7 @@ export default function Navbar({ }: Props) {
             </div>
             <div className="sm:flex gap-4 hidden ">
                 <Link href={''} className='p-2 text-GrayishViolet'> Login</Link>
-                <Link href={''} className='p-2 text-center bg-Cyan rounded-3xl px-4'>Sign Up</Link>
+                <Link href={''} className='p-2 text-center bg-Cyan hover:bg-opacity-80 bg-opacity-100 rounded-3xl px-4 text-white'>Sign Up</Link>
             </div>
             <button className='sm:hidden '><AiOutlineMenu className=' w-8 h-8' /></button>
 
